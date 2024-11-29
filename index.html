@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--- CDN Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/briefcase-fill.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- archivo Css-->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Juliana Camarillo</title>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+
+      <!-- Icono -->
+      <i class="bi bi-briefcase-fill p-3 colorea-boton"></i>
+      <span class="fs-4">Juliana Camarillo</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item boton-perfil"><a id="boton-perfil" href="#" class="nav-link active" aria-current="page">Perfil</a></li>
+      <li class="nav-item"><a href="#hanging-icons" class="nav-link">Habilidades</a></li>
+      <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+      <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </header>
+  <main>
+    <!-- hero-->
+    <div class="hero">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="assets/FotoCurriculum.jpeg" alt="" width="200">
+        <h1 class="display-5 fw-bold text-body-emphasis">Juliana Camarillo</h1>
+        <!-- Texto Typewriter-->
+        <h2 id="app"></h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Estudiante de Negocios y Comercio Internacional de la Universidad de Sonora. Apasionada
+            por las relaciones poliíticas y diplomáticas. Me caracteriza mis habilidades para trabajar bajo presión, debates
+            y mi interés en los deportes. Comprometida con el aprendizaje continuo y el desarrollo profesional para
+            generar impacto en un mundo globalizado. </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 boton-cv">Conoce mi trayectoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Habilidades -->
+    <div class="habilidades container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Habilidades</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            <i class="bi bi-laptop-fill px-1"></i>
+          </div>
+          <div>
+            <h3 class="fs-2 ">Desarrollo Frontend</h3>
+            <p>He desarrollado sitios web responsivos a partir de los conocimientos obtenidos durante mi bootcamp de
+              Tecnolochicas PRO.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            <i class="bi bi-translate px-1"></i>
+          </div>
+          <div>
+            <h3 class="fs-2 ">中文！</h3>
+            <p>Hablo tres idiomas: español, inglés y chino mandarín. Aunque estoy en vistas de aprender un par más. </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            <i class="bi bi-backpack-fill px-1"></i>
+          </div>
+          <div>
+            <h3 class="fs-2">Estudiante</h3>
+            <p>Actualmente me encuentro estudiando la carrera de Negocios y Comercio Internacional, he aplicado mis
+              conocimientos en cursos y debates como "Harvard Business Publishing" y MUN´s. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div id="proyectos" class="proyectos container mt-5">
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen -->
+            <img class="bd-placeholder-img card-img-top" src="assets/ClonePinterestCaptura.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Clone de Pinterest.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://pinterest-clon-lemon.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/juliana-camarillo/pinterest-clon">Github</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen-->
+            <img class="bd-placeholder-img card-img-top" src="assets/PrimerSitioCaptura.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Primer sitio Web.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://mi-primer-sitio-web-one.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/juliana-camarillo/Mi-Primer-Sitio-Web">Github</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen-->
+            <img class="bd-placeholder-img card-img-top" src="assets/PrimerSitioCaptura.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Aquí va la descripción del proyecto JavaScript.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://pinterest-clon-lemon.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/juliana-camarillo/pinterest-clon">Github</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonios-->
+    <div id="testimonios" class="testimonios container mt-5">
+      <h2 class="pb-2 border-bottom">Testimonios</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <!-- card -->
+              <div class="card border-0" style="width: 18rem;">
+                <img src="assets/FotoMentora.jpg" class="card-img-top rounded-circle" alt="imagen de testimonio">
+                <h5 class="card-title text-center mt-3">Anel Montes de Oca</h5>
+                <h6 class="card-subtitle text-body-secondary text-center">Mentora en Tecnolochicas Pro</h6>
+                <div class="card-body">
+                  <p class="card-text">Juliana Camarillo muestra un rápido progreso en la adquisición de habilidades
+                    técnicas clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad
+                    de aprender constantemente son cualidades valiosas en el campo de la programación. No tengo dudas de
+                    que Juliana seguirá creciendo y haciendo contribuciones significativas como desarrolladora frontend
+                    en el futuro..</p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- card-->
+              <div class="card border-0" style="width: 18rem;">
+                <img src="assets/fototestimonio2.jpeg" class="card-img-top rounded-circle" alt="...">
+                <h5 class="card-title text-center mt-3">Testimonio 2</h5>
+                <h6 class="card-subtitle text-body-secondary text-center">Compañera del Bootcamp Tecnolochicas Pro</h6>
+                <div class="card-body">
+                  <p class="card-text">He tenido la oportunidad de ver el trabajo de Juliana Camarillo y realmente me ha impresionado. Sus habilidades técnicas y su capacidad para desarrollar soluciones efectivas son notables. Siempre entrega proyectos bien estructurados y de alta calidad. Es una profesional comprometida y confiable, y sin duda su trabajo habla por sí mismo.</p>
+                </div>
+              </div>
+              <!-- fin card-->
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- card -->
+              <div class="card border-0" style="width: 18rem;">
+                <img src="assets/M.Rayo.jpeg" class="card-img-top rounded-circle" alt="...">
+                <h5 class="card-title text-center mt-3">María del Rayo Ponce Vargas</h5>
+                <h6 class="card-subtitle text-body-secondary text-center">Compañera del Bootcamp Tecnolochicas Pro</h6>
+                <div class="card-body">
+                  <p class="card-text">Como compañera de Juliana Camarillo durante el Bootcamp de Techonolochicas Pro, considero que es una persona dedicada y atenta que busca mejorar sus habilidades como desarrolladora Frontend. Seguramente, debido a su desempeño, se convertirá en una profesional exitosa.</p>
+                </div>
+              </div>
+              <!-- fin card-->
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- contacto-->
+    <div id="contacto" class="px-4 py-5 my-5 text-center">
+      <i class="bi bi-send mx-auto mb-4 fs-1"></i>
+      <h1 class="display-5 fw-bold">Contáctame.</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Contáctame para recibir más información.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="mailto:Juliana.Camarillo@outlook.com">
+            <button id="btn-contacto" type="button" class="btn btn-light btn-lg px-4 gap-3">Enviar correo.</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://www.instagram.com/julianaacg_/profilecard/?igsh=MWw2OGxoNWFvdncwcQ==" class="nav-link px-2 btn-footer"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/juliana-marina-camarillo-grijalva-44b009335/"
+          class="nav-link px-2 btn-footer"><i class="bi bi-linkedin"></i></a></li>
+      <li class="nav-item"><a href="https://github.com/juliana-camarillo" class="nav-link px-2 btn-footer"><i
+            class="bi bi-github"></i></a></li>
+    </ul>
+    <p class="text-center">Creado por Juliana Camarillo en el bootcamp de <a
+        href="https://tecnolochicas.mx/">TecnolochicasPro</a></p>
+  </footer>
+
+  <!-- Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Cdn Typewriter-->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- main Js-->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
